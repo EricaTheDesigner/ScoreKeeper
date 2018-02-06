@@ -14,17 +14,45 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/teamSlytherin"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Team One"/>
+                android:text="Slytherin"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/teamSlytherinScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:textSize="70sp"
+                android:layout_marginBottom="20dp"/>
             <Button
-                android:id="@+id/Point1"
-                android:layout_width="wrap_content"
+                android:id="@+id/SlytherinScoreButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:padding="40dp"
+                android:text="score"/>
+            <Button
+                android:id="@+id/SlytherinSnitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="60dp"
-                android:text="Point"/>
+                android:textSize="20sp"
+                android:padding="40dp"
+                android:text="snitch"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -33,26 +61,58 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/teamGryffindor"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Team Two"/>
+                android:text="Gryffindor"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:padding="4dp"/>
+            <TextView
+                android:id="@+id/teamGryffindorScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:textSize="70sp"/>
             <Button
-                android:id="@+id/Point2"
-                android:layout_width="wrap_content"
+                android:id="@+id/GryffindorScoreButton"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:padding="40dp"
+                android:text="score"/>
+            <Button
+                android:id="@+id/GryffindorSnitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="60dp"
-                android:text="Point"/>
+                android:textSize="20sp"
+                android:padding="40dp"
+                android:text="snitch"/>
         </LinearLayout>
     </LinearLayout>
     <Button
-        android:id="@+id/newGameReset"
-        android:layout_width="wrap_content"
+        android:id="@+id/GameReset"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:text="New game"/>
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:text="reset game"
+        android:padding="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
 
 </RelativeLayout>
