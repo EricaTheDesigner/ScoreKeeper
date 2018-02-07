@@ -10,9 +10,17 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#b63838"
+            android:background="#1b5d16"
             android:layout_weight="1"
             android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/slytherincrest"
+                android:gravity="center_horizontal"
+                android:baselineAlignTop="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
             <TextView
                 android:id="@+id/teamSlytherin"
                 android:layout_width="match_parent"
@@ -20,7 +28,8 @@
                 android:text="Slytherin"
                 android:gravity="center_horizontal"
                 android:textSize="30sp"
-                android:padding="4dp"/>
+                android:padding="4dp"
+                android:fontFamily="@font/HARRYP__"/>
             <TextView
                 android:id="@+id/teamSlytherinScore"
                 android:layout_width="match_parent"
@@ -28,7 +37,7 @@
                 android:text="0"
                 android:gravity="center_horizontal"
                 android:textSize="70sp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="8dp"/>
             <Button
                 android:id="@+id/SlytherinScoreButton"
                 android:layout_width="match_parent"
@@ -39,7 +48,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
                 android:textSize="20sp"
-                android:padding="40dp"
+                android:padding="30dp"
                 android:text="score"/>
             <Button
                 android:id="@+id/SlytherinSnitch"
@@ -51,15 +60,23 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="60dp"
                 android:textSize="20sp"
-                android:padding="40dp"
+                android:padding="30dp"
                 android:text="snitch"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#34cfcf"
+            android:background="#a20f10"
             android:layout_weight="1"
             android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/gryffindorcrest"
+                android:gravity="center_horizontal"
+                android:baselineAlignTop="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
             <TextView
                 android:id="@+id/teamGryffindor"
                 android:layout_width="match_parent"
@@ -67,14 +84,15 @@
                 android:text="Gryffindor"
                 android:gravity="center_horizontal"
                 android:textSize="30sp"
-                android:padding="4dp"/>
+                android:padding="4dp"
+                android:fontFamily="@font/HARRYP__"/>
             <TextView
                 android:id="@+id/teamGryffindorScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:gravity="center_horizontal"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="8dp"
                 android:textSize="70sp"/>
             <Button
                 android:id="@+id/GryffindorScoreButton"
@@ -86,7 +104,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="20dp"
                 android:textSize="20sp"
-                android:padding="40dp"
+                android:padding="30dp"
                 android:text="score"/>
             <Button
                 android:id="@+id/GryffindorSnitch"
@@ -98,7 +116,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="60dp"
                 android:textSize="20sp"
-                android:padding="40dp"
+                android:padding="30dp"
                 android:text="snitch"/>
         </LinearLayout>
     </LinearLayout>
