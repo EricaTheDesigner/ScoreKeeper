@@ -10,34 +10,35 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#1b5d16"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/field">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="120dp"
                 android:src="@drawable/slytherincrest"
                 android:gravity="center_horizontal"
-                android:baselineAlignTop="true"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="16dp"/>
             <TextView
                 android:id="@+id/teamSlytherin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Slytherin"
                 android:gravity="center_horizontal"
-                android:textSize="30sp"
+                android:textSize="50sp"
                 android:padding="4dp"
-                android:fontFamily="@font/HARRYP__"/>
+                android:fontFamily="@font/harryp"
+                android:textColor="#ffffff"/>
             <TextView
-                android:id="@+id/teamSlytherinScore"
+                android:id="@+id/finalScoreSlytherin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:gravity="center_horizontal"
                 android:textSize="70sp"
-                android:layout_marginBottom="8dp"/>
+                android:layout_marginBottom="4dp"
+                android:textColor="#ffffff"/>
             <Button
                 android:id="@+id/SlytherinScoreButton"
                 android:layout_width="match_parent"
@@ -46,12 +47,12 @@
                 android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="8dp"
                 android:textSize="20sp"
-                android:padding="30dp"
+                android:padding="20dp"
                 android:text="score"/>
             <Button
-                android:id="@+id/SlytherinSnitch"
+                android:id="@+id/snitchSlytherin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -60,40 +61,41 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="60dp"
                 android:textSize="20sp"
-                android:padding="30dp"
+                android:padding="20dp"
                 android:text="snitch"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="#a20f10"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/fieldr">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="120dp"
                 android:src="@drawable/gryffindorcrest"
                 android:gravity="center_horizontal"
-                android:baselineAlignTop="true"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="16dp"/>
             <TextView
                 android:id="@+id/teamGryffindor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Gryffindor"
                 android:gravity="center_horizontal"
-                android:textSize="30sp"
+                android:textSize="50sp"
                 android:padding="4dp"
-                android:fontFamily="@font/HARRYP__"/>
+                android:fontFamily="@font/harryp"
+                android:textColor="#ffffff"/>
             <TextView
-                android:id="@+id/teamGryffindorScore"
+                android:id="@+id/finalScoreGryffindor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:textSize="70sp"/>
+                android:layout_marginBottom="4dp"
+                android:textSize="70sp"
+                android:textColor="#ffffff"/>
             <Button
                 android:id="@+id/GryffindorScoreButton"
                 android:layout_width="match_parent"
@@ -102,9 +104,9 @@
                 android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="8dp"
                 android:textSize="20sp"
-                android:padding="30dp"
+                android:padding="20dp"
                 android:text="score"/>
             <Button
                 android:id="@+id/GryffindorSnitch"
@@ -116,21 +118,24 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="60dp"
                 android:textSize="20sp"
-                android:padding="30dp"
+                android:padding="20dp"
                 android:text="snitch"/>
         </LinearLayout>
     </LinearLayout>
     <Button
-        android:id="@+id/GameReset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="20sp"
-        android:layout_marginBottom="10dp"
-        android:text="reset game"
-        android:padding="15dp"
+        android:textSize="36sp"
+        android:layout_marginBottom="16dp"
+        android:text="reset"
+        android:padding="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"/>
+        android:layout_marginRight="16dp"
+        android:onClick="reset"
+        android:fontFamily="@font/harryp"
+        android:textColor="#f9d90a"
+        android:background="#000000"/>
 
 </RelativeLayout>
