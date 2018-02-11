@@ -3,19 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/field"
             android:orientation="vertical">
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/crestHeight"
@@ -23,7 +20,6 @@
                 android:layout_marginTop="@dimen/crestMarginTop"
                 android:gravity="center_horizontal"
                 android:src="@drawable/slytherincrest" />
-
             <TextView
                 android:id="@+id/teamSlytherin"
                 android:layout_width="match_parent"
@@ -34,7 +30,6 @@
                 android:text="Slytherin"
                 android:textColor="@color/TeamFontColor"
                 android:textSize="@dimen/TeamTextSize" />
-
             <TextView
                 android:id="@+id/final_score_slytherin"
                 android:layout_width="match_parent"
@@ -44,7 +39,6 @@
                 android:text="0"
                 android:textColor="@color/ScoreColor"
                 android:textSize="@dimen/ScoreTextSize" />
-
             <Button
                 android:id="@+id/SlytherinScoreButton"
                 android:layout_width="match_parent"
@@ -59,7 +53,6 @@
                 android:padding="@dimen/ButtonPadding"
                 android:text="score"
                 android:textSize="@dimen/ButtonTextSize" />
-
             <Button
                 android:id="@+id/snitchSlytherin"
                 android:layout_width="match_parent"
@@ -76,14 +69,12 @@
                 android:text="snitch"
                 android:textSize="@dimen/ButtonTextSize" />
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/fieldr"
             android:orientation="vertical">
-
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
@@ -91,7 +82,6 @@
                 android:layout_marginTop="32dp"
                 android:gravity="center_horizontal"
                 android:src="@drawable/gryffindorcrest" />
-
             <TextView
                 android:id="@+id/teamGryffindor"
                 android:layout_width="match_parent"
@@ -102,7 +92,6 @@
                 android:text="Gryffindor"
                 android:textColor="@color/TeamFontColor"
                 android:textSize="@dimen/TeamTextSize" />
-
             <TextView
                 android:id="@+id/final_score_gryffindor"
                 android:layout_width="match_parent"
@@ -112,7 +101,6 @@
                 android:text="0"
                 android:textColor="@color/ScoreColor"
                 android:textSize="@dimen/ScoreTextSize" />
-
             <Button
                 android:id="@+id/GryffindorScoreButton"
                 android:layout_width="match_parent"
@@ -127,7 +115,6 @@
                 android:padding="@dimen/ButtonPadding"
                 android:text="score"
                 android:textSize="@dimen/ButtonTextSize" />
-
             <Button
                 android:id="@+id/GryffindorSnitch"
                 android:layout_width="match_parent"
@@ -145,7 +132,6 @@
                 android:textSize="@dimen/ButtonTextSize" />
         </LinearLayout>
     </LinearLayout>
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -161,5 +147,4 @@
         android:text="reset game"
         android:textColor="#f9d90a"
         android:textSize="36sp" />
-
 </RelativeLayout>
