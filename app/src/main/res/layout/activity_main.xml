@@ -1,141 +1,165 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:background="@drawable/field">
+            android:background="@drawable/field"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/slytherincrest"
+                android:layout_height="@dimen/crestHeight"
+                android:layout_marginBottom="@dimen/crestMarginBottom"
+                android:layout_marginTop="@dimen/crestMarginTop"
                 android:gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"/>
+                android:src="@drawable/slytherincrest" />
+
             <TextView
                 android:id="@+id/teamSlytherin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Slytherin"
-                android:gravity="center_horizontal"
-                android:textSize="50sp"
-                android:padding="4dp"
                 android:fontFamily="@font/harryp"
-                android:textColor="#ffffff"/>
+                android:gravity="center_horizontal"
+                android:padding="@dimen/TeamTextPadding"
+                android:text="Slytherin"
+                android:textColor="@color/TeamFontColor"
+                android:textSize="@dimen/TeamTextSize" />
+
             <TextView
-                android:id="@+id/finalScoreSlytherin"
+                android:id="@+id/final_score_slytherin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:layout_marginBottom="@dimen/ScoreMarginBottom"
                 android:gravity="center_horizontal"
-                android:textSize="70sp"
-                android:layout_marginBottom="4dp"
-                android:textColor="#ffffff"/>
+                android:text="0"
+                android:textColor="@color/ScoreColor"
+                android:textSize="@dimen/ScoreTextSize" />
+
             <Button
                 android:id="@+id/SlytherinScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="8dp"
-                android:textSize="20sp"
-                android:padding="20dp"
-                android:text="score"/>
+                android:layout_marginBottom="@dimen/ButtonMarginBottom"
+                android:layout_marginLeft="@dimen/ButtonMarginRight"
+                android:layout_marginRight="@dimen/ButtonMarginRight"
+                android:fontFamily="@font/jim_nightshade"
+                android:onClick="add10PointsSlytherin"
+                android:padding="@dimen/ButtonPadding"
+                android:text="score"
+                android:textSize="@dimen/ButtonTextSize" />
+
             <Button
                 android:id="@+id/snitchSlytherin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="60dp"
-                android:textSize="20sp"
-                android:padding="20dp"
-                android:text="snitch"/>
+                android:layout_marginBottom="@dimen/ButtonMarginBottom"
+                android:layout_marginLeft="@dimen/ButtonMarginRight"
+                android:layout_marginRight="@dimen/ButtonMarginRight"
+                android:background="@color/SnitchBackground"
+                android:fontFamily="@font/jim_nightshade"
+                android:onClick="addSnitchSlytherin"
+                android:padding="@dimen/ButtonPadding"
+                android:text="snitch"
+                android:textSize="@dimen/ButtonTextSize" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:background="@drawable/fieldr">
+            android:background="@drawable/fieldr"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:src="@drawable/gryffindorcrest"
-                android:gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:src="@drawable/gryffindorcrest" />
+
             <TextView
                 android:id="@+id/teamGryffindor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Gryffindor"
-                android:gravity="center_horizontal"
-                android:textSize="50sp"
-                android:padding="4dp"
                 android:fontFamily="@font/harryp"
-                android:textColor="#ffffff"/>
+                android:gravity="center_horizontal"
+                android:padding="@dimen/TeamTextPadding"
+                android:text="Gryffindor"
+                android:textColor="@color/TeamFontColor"
+                android:textSize="@dimen/TeamTextSize" />
+
             <TextView
-                android:id="@+id/finalScoreGryffindor"
+                android:id="@+id/final_score_gryffindor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0"
+                android:layout_marginBottom="@dimen/ScoreMarginBottom"
                 android:gravity="center_horizontal"
-                android:layout_marginBottom="4dp"
-                android:textSize="70sp"
-                android:textColor="#ffffff"/>
+                android:text="0"
+                android:textColor="@color/ScoreColor"
+                android:textSize="@dimen/ScoreTextSize" />
+
             <Button
                 android:id="@+id/GryffindorScoreButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="8dp"
-                android:textSize="20sp"
-                android:padding="20dp"
-                android:text="score"/>
+                android:layout_marginBottom="@dimen/ButtonMarginBottom"
+                android:layout_marginLeft="@dimen/ButtonMarginRight"
+                android:layout_marginRight="@dimen/ButtonMarginRight"
+                android:fontFamily="@font/jim_nightshade"
+                android:onClick="add10PointsGryffindor"
+                android:padding="@dimen/ButtonPadding"
+                android:text="score"
+                android:textSize="@dimen/ButtonTextSize" />
+
             <Button
                 android:id="@+id/GryffindorSnitch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="60dp"
-                android:textSize="20sp"
-                android:padding="20dp"
-                android:text="snitch"/>
+                android:layout_marginBottom="@dimen/ButtonMarginBottom"
+                android:layout_marginLeft="@dimen/ButtonMarginRight"
+                android:layout_marginRight="@dimen/ButtonMarginRight"
+                android:background="@color/SnitchBackground"
+                android:fontFamily="@font/jim_nightshade"
+                android:onClick="addSnitchGryffindor"
+                android:padding="@dimen/ButtonPadding"
+                android:text="snitch"
+                android:textSize="@dimen/ButtonTextSize" />
         </LinearLayout>
     </LinearLayout>
+
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="36sp"
         android:layout_marginBottom="16dp"
-        android:text="reset"
-        android:padding="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:onClick="reset"
+        android:background="#00f9d90a"
         android:fontFamily="@font/harryp"
+        android:onClick="reset"
+        android:padding="16dp"
+        android:text="reset game"
         android:textColor="#f9d90a"
-        android:background="#000000"/>
+        android:textSize="36sp" />
 
 </RelativeLayout>

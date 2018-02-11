@@ -7,7 +7,6 @@
         <item name="colorPrimaryDark">#000000</item>
         <item name="colorAccent">@color/colorAccent</item>
         <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#ffffff</item>
+        <item name="colorButtonNormal">#9cffffff</item>w
     </style>
-
 </resources>

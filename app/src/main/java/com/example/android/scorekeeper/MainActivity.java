@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Slytherin.
      */
     public void displayforTeamSlytherin(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.finalScoreSlytherin);
+        TextView scoreView = findViewById(R.id.final_score_slytherin);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
      * Displays the given score for Gryffindor.
      */
     public void displayForTeamGryffindor(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.finalScoreGryffindor);
+        TextView scoreView = findViewById(R.id.final_score_gryffindor);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         finalScoreSlytherin = 0;
         displayforTeamSlytherin(finalScoreSlytherin);
         finalScoreGryffindor = 0;
-        displayforTeamSlytherin(finalScoreGryffindor);
+        displayForTeamGryffindor(finalScoreGryffindor);
     }
 
 }

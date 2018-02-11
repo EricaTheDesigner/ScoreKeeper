@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="crestHeight">120dp</dimen>
+    <dimen name="crestMarginBottom">8dp</dimen>
+    <dimen name="crestMarginTop">32dp</dimen>
+    <dimen name="TeamTextSize">50sp</dimen>
+    <dimen name="TeamTextPadding">4dp</dimen>
+    <dimen name="ScoreTextSize">70sp</dimen>
+    <dimen name="ScoreMarginBottom">4dp</dimen>
+    <dimen name="ButtonMarginBottom">8dp</dimen>
+    <dimen name="ButtonMarginRight">16dp</dimen>
+    <dimen name="ButtonPadding">8dp</dimen>
+    <dimen name="ButtonTextSize">30sp</dimen>
+</resources>
