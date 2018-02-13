@@ -1,7 +1,7 @@
 package com.example.android.scorekeeper;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         displayforTeamSlytherin(0);
         displayForTeamGryffindor(0);
     }
+
 
     /**
      * This method is to add points when Slytherin scores a goal
@@ -81,5 +82,25 @@ public class MainActivity extends AppCompatActivity {
         finalScoreGryffindor = 0;
         displayForTeamGryffindor(finalScoreGryffindor);
     }
+
+    /**
+     * save state
+     *
+     */
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("final_score_slytherin", finalScoreSlytherin);
+        outState.putInt("final_score_gryffindor", finalScoreGryffindor);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        finalScoreSlytherin = savedInstanceState.getInt("final_score_slytherin");
+        finalScoreGryffindor = savedInstanceState.getInt("final_score_gryffindor");
+    }
+
 
 }
