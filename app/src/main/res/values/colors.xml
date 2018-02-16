@@ -5,5 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="TeamFontColor">#9cffffff</color>
     <color name="ScoreColor">#ffffff</color>
-    <color name="SnitchBackground">#9cf9d90a</color>
+    <color name="SnitchBackground">#9cf5c503</color>
+    <color name="SlytherinGreen">#184416</color>
+    <color name="GryffindorRed">#53040c</color>
 </resources>
