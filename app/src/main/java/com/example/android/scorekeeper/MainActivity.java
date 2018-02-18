@@ -1,7 +1,7 @@
 package com.example.android.scorekeeper;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
@@ -15,12 +15,40 @@ public class MainActivity extends AppCompatActivity {
     //Tracks the score for Gryffindor
     int finalScoreGryffindor = 0;
 
+    //Initializing Views in on Create method
+    TextView final_score_gryffindor;
+    TextView final_score_slytherin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         displayforTeamSlytherin(0);
         displayForTeamGryffindor(0);
+
+        //Initializing Views in on Create method referring back to android: id of score view
+        final_score_slytherin = findViewById(R.id.final_score_slytherin);
+        final_score_gryffindor = findViewById(R.id.final_score_gryffindor);
+    }
+
+    /**
+     * Save State Methods so score stays when screen is rotated
+     */
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("someVarA", finalScoreSlytherin);
+        outState.putInt("someVarB", finalScoreGryffindor);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        finalScoreSlytherin = savedInstanceState.getInt("someVarA");
+        finalScoreGryffindor = savedInstanceState.getInt("someVarB");
+        displayForTeamGryffindor(finalScoreGryffindor);
+        displayforTeamSlytherin(finalScoreSlytherin);
     }
 
 
@@ -82,25 +110,5 @@ public class MainActivity extends AppCompatActivity {
         finalScoreGryffindor = 0;
         displayForTeamGryffindor(finalScoreGryffindor);
     }
-
-    /**
-     * save state
-     *
-     */
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt("final_score_slytherin", finalScoreSlytherin);
-        outState.putInt("final_score_gryffindor", finalScoreGryffindor);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        finalScoreSlytherin = savedInstanceState.getInt("final_score_slytherin");
-        finalScoreGryffindor = savedInstanceState.getInt("final_score_gryffindor");
-    }
-
 
 }
